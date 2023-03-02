@@ -1,0 +1,17 @@
+.challenge {
+	border: 1px solid white;
+	width: 400px;
+	padding: 1em;
+}
+
+.challenge--image {
+	width: 100%;
+	height: 50%;
+}
+
+.challenge--links {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-block: 1em;
+}
