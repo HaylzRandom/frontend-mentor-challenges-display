@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDesktop } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 // Styles
 import './challenge.css';
 
@@ -23,7 +27,7 @@ const Challenge = ({ data }) => {
 			</h3>
 			<ul className='challenge--skills'>
 				{skills.map((skill) => (
-					<li key={skill} className='challenge-skill'>
+					<li key={skill} className='challenge--skill'>
 						{skill}
 					</li>
 				))}
@@ -31,10 +35,10 @@ const Challenge = ({ data }) => {
 			<p className='challenge--description'>{description}</p>
 			<div className='challenge--links'>
 				<a href={demo} className='challenge--demo link'>
-					Demo
+					<FontAwesomeIcon icon={faDesktop} />
 				</a>
 				<a href={github} className='challenge--github link'>
-					GitHub
+					<FontAwesomeIcon icon={faGithub} />
 				</a>
 			</div>
 		</div>

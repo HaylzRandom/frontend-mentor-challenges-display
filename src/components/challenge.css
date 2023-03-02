@@ -2,6 +2,9 @@
 	border: 1px solid white;
 	width: 400px;
 	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 .challenge--image {
@@ -9,9 +12,21 @@
 	height: 50%;
 }
 
+.challenge--skill {
+	border: 1px solid white;
+	padding: 0.25em;
+	font-weight: bold;
+}
+
 .challenge--links {
 	display: flex;
+	justify-content: space-evenly;
 	align-items: center;
-	justify-content: space-around;
-	padding-block: 1em;
+	gap: 2em;
+	padding-bottom: 1.5em;
+}
+
+.challenge--demo,
+.challenge--github {
+	font-size: 2rem;
 }
