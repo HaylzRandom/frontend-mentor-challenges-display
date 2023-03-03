@@ -1,10 +1,35 @@
+:root {
+	--background-clr: hsl(0, 0%, 7%);
+	--text--clr: hsl(0, 0%, 100%);
+	--link--clr: hsl(274, 34%, 29%);
+	--border-clr: hsl(274, 34%, 29%);
+}
+
 * {
 	box-sizing: border-box;
 }
 
 html {
-	color-scheme: dark light;
+	color-scheme: light;
 }
+
+@media (prefers-color-scheme: light) {
+	html {
+		color-scheme: light;
+	}
+}
+
+/* @media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
+	}
+} */
+
+/* @media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
+	}
+} */
 
 body {
 	padding: 2em;
@@ -13,6 +38,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: var(--link--clr);
 }
 
 a:hover,

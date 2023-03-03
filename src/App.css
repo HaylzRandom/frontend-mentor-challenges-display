@@ -3,22 +3,33 @@ header {
 	padding-block: 1em;
 }
 
-#newbie {
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.challenge--section {
 	width: 100%;
-	border: 1px solid white;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
 .challenge--header {
+	border: 1px solid var(--border-clr);
+	border-radius: 0.5em 0.5em 0 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding-inline: 2em;
 }
 
-.challenge--info {
+.challenges {
+	border: 1px solid var(--border-clr);
+}
+
+.challenge--stats {
 	display: flex;
 	align-items: center;
 }
@@ -41,4 +52,5 @@ header {
 
 .icon {
 	font-size: 2rem;
+	color: var(--border-clr);
 }
